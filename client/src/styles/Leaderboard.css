@@ -1,0 +1,131 @@
+/* client/src/styles/Leaderboard.css */
+.leaderboard {
+    padding: 2rem 0;
+  }
+  
+  .leaderboard h1 {
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+    text-align: center;
+  }
+  
+  .loading-container {
+    text-align: center;
+    padding: 3rem 0;
+  }
+  
+  .leaderboard-intro {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #7f8c8d;
+  }
+  
+  .leaderboard-table-container {
+    background-color: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+    margin-bottom: 2rem;
+  }
+  
+  .leaderboard-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .leaderboard-table th {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 2px solid #3498db;
+    color: #2c3e50;
+  }
+  
+  .leaderboard-table td {
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .leaderboard-table tr:last-child td {
+    border-bottom: none;
+  }
+  
+  .leaderboard-table tr:hover {
+    background-color: #f8f9fa;
+  }
+  
+  .rank {
+    width: 70px;
+  }
+  
+  .rank-number {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #95a5a6;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .top-1 .rank-number {
+    background-color: #f1c40f;
+    font-size: 1.2rem;
+  }
+  
+  .top-2 .rank-number {
+    background-color: #bdc3c7;
+    font-size: 1.1rem;
+  }
+  
+  .top-3 .rank-number {
+    background-color: #d35400;
+    font-size: 1.05rem;
+  }
+  
+  .player-name {
+    font-weight: bold;
+    color: #2c3e50;
+  }
+  
+  .player-score {
+    font-weight: bold;
+    color: #3498db;
+  }
+  
+  .no-data {
+    text-align: center;
+    padding: 3rem 0;
+    color: #7f8c8d;
+  }
+  
+  .leaderboard-footer {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  .leaderboard-footer p {
+    margin-bottom: 1rem;
+    color: #7f8c8d;
+    font-style: italic;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .leaderboard-table {
+      font-size: 0.9rem;
+    }
+    
+    .leaderboard-table th,
+    .leaderboard-table td {
+      padding: 0.75rem 0.5rem;
+    }
+    
+    .rank-number {
+      width: 30px;
+      height: 30px;
+      font-size: 0.9rem;
+    }
+  }

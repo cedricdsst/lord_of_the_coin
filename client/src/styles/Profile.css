@@ -1,0 +1,189 @@
+/* client/src/styles/Profile.css */
+.profile {
+    padding: 2rem 0;
+  }
+  
+  .profile h1 {
+    margin-bottom: 2rem;
+    color: #2c3e50;
+    text-align: center;
+  }
+  
+  .profile-content {
+    display: grid;
+    grid-gap: 2rem;
+  }
+  
+  .loading-container {
+    text-align: center;
+    padding: 3rem 0;
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card h2 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+    font-size: 1.5rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.75rem;
+  }
+  
+  /* Infos utilisateur */
+  .info-item {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .info-label {
+    font-weight: bold;
+    width: 150px;
+    color: #2c3e50;
+  }
+  
+  .info-value {
+    flex: 1;
+    color: #7f8c8d;
+  }
+  
+  /* Statistiques */
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .stat-item {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+  }
+  
+  .stat-value {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #3498db;
+    margin-bottom: 0.5rem;
+  }
+  
+  .stat-label {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+  }
+  
+  .high-score {
+    text-align: center;
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #f1c40f;
+    color: white;
+    border-radius: 8px;
+  }
+  
+  .high-score-label {
+    font-weight: bold;
+    margin-right: 0.5rem;
+  }
+  
+  .high-score-value {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  /* Historique des parties */
+  .history-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .history-item {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr 1fr;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    gap: 1rem;
+  }
+  
+  .history-item.win {
+    border-left: 4px solid #2ecc71;
+  }
+  
+  .history-item.loss {
+    border-left: 4px solid #e74c3c;
+  }
+  
+  .history-item.tie {
+    border-left: 4px solid #f39c12;
+  }
+  
+  .history-date {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+  }
+  
+  .history-result {
+    font-weight: bold;
+    color: #2c3e50;
+  }
+  
+  .history-opponent {
+    color: #7f8c8d;
+  }
+  
+  .history-status {
+    font-weight: bold;
+  }
+  
+  .history-item.win .history-status {
+    color: #2ecc71;
+  }
+  
+  .history-item.loss .history-status {
+    color: #e74c3c;
+  }
+  
+  .history-item.tie .history-status {
+    color: #f39c12;
+  }
+  
+  .no-history {
+    text-align: center;
+    color: #7f8c8d;
+    font-style: italic;
+    padding: 1rem 0;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .history-item {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+    
+    .stats-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .profile-content {
+      grid-template-columns: 1fr 1fr;
+    }
+    
+    .game-history {
+      grid-column: span 2;
+    }
+  }

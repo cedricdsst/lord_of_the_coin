@@ -1,0 +1,98 @@
+/* client/src/styles/Dashboard.css */
+.dashboard {
+    padding: 2rem 0;
+  }
+  
+  .dashboard h1 {
+    margin-bottom: 2rem;
+    color: #2c3e50;
+    text-align: center;
+  }
+  
+  .welcome-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .welcome-card h2 {
+    margin-top: 0;
+    color: #2c3e50;
+  }
+  
+  .welcome-card p {
+    margin-bottom: 1.5rem;
+    color: #7f8c8d;
+  }
+  
+  .btn-create-room {
+    font-size: 1.1rem;
+    padding: 0.75rem 2rem;
+  }
+  
+  .rooms-section {
+    background-color: white;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .rooms-section h2 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+  }
+  
+  .rooms-list {
+    display: grid;
+    grid-gap: 1rem;
+  }
+  
+  .room-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .room-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  .room-info h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #2c3e50;
+  }
+  
+  .room-info p {
+    margin: 0.5rem 0 0;
+    color: #7f8c8d;
+  }
+  
+  .btn-join-room {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .btn-join-room:hover {
+    background-color: #2980b9;
+  }
+  
+  .no-rooms {
+    text-align: center;
+    padding: 2rem 0;
+    color: #7f8c8d;
+  }
