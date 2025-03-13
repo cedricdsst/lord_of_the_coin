@@ -1,4 +1,4 @@
-# Click Battle
+# Lord Of The Coin
 
 Un jeu multijoueur de plateforme où les joueurs s'affrontent pour l'anneau.
 
@@ -13,7 +13,7 @@ Un jeu multijoueur de plateforme où les joueurs s'affrontent pour l'anneau.
 1. Clonez le dépôt :
 ```
 git clone <url-du-repo>
-cd click-battle
+cd lord_of_the_coin
 ```
 
 2. Installez les dépendances du serveur :
