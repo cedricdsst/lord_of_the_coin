@@ -43,11 +43,6 @@ Cette commande va démarrer:
 docker-compose ps
 ```
 
-3. Migrations de la base de données (depuis le dossier `server`) :
-```
-cd server
-npx sequelize-cli db:migrate
-```
 
 ## Lancement de l'application
 
